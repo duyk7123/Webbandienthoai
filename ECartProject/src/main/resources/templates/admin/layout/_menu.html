@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<nav
+		class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-expand-md"
+		role="navigation">
+
+		<div class="navbar-header">
+			<button type="button"
+				class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+				data-toggle="menubar">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="hamburger-bar"></span>
+			</button>
+			<button type="button" class="navbar-toggler collapsed"
+				data-target="#site-navbar-collapse" data-toggle="collapse">
+				<i class="icon wb-more-horizontal" aria-hidden="true"></i>
+			</button>
+			<a href="/admin/index"> <img class="navbar-brand-logo"
+				  src="/assets/admin/base/assets/images/logo.png" title="" style="width: 50px;  height: 70px;"  ></a>
+			<div class="navbar-brand navbar-brand-center">
+				<a class="navbar-brand-text hidden-xs-down "   style="color: aliceblue;text-decoration: none " href="/admin/index">ADMIN
+				
+				  </a> 
+			</div>
+			
+		</div>
+
+		<div class="navbar-container container-fluid">
+			<!-- Navbar Collapse --><button id="btnSave" type="button"  class="btn btn-primary "   >
+							<a class="fa fa-home  " ><a style="margin-left: 5px; color: aliceblue;text-decoration: none;  "href="/index">HOME</a></a>
+							
+						</button>
+			<div class="collapse navbar-collapse navbar-collapse-toolbar"
+				id="site-navbar-collapse">
+				<!-- Navbar Toolbar -->
+				
+				<!-- End Navbar Toolbar -->
+
+				<!-- Navbar Toolbar Right -->
+				<ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+					<li class="nav-item dropdown"><a class="nav-link"
+						data-toggle="dropdown" href="javascript:void(0)"
+						data-animation="scale-up" aria-expanded="false" role="button">
+							<span class="flag-icon flag-icon-vn"></span>
+					</a>
+						<div class="dropdown-menu" role="menu">
+							<a class="dropdown-item" href="javascript:void(0)"
+								role="menuitem"> <span class="flag-icon flag-icon-vn"></span>
+								VietNam
+							</a> <a class="dropdown-item" href="javascript:void(0)"
+								role="menuitem"> <span class="flag-icon flag-icon-gb"></span>
+								English
+							</a>
+						</div></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link navbar-avatar" data-toggle="dropdown" href="#"
+						aria-expanded="false" data-animation="scale-up" role="button">
+							<span class="avatar avatar-online"> <img
+								src="/assets/admin/global/portraits/5.jpg" alt="..."> <i></i>
+						</span>
+					</a>
+						<div class="dropdown-menu" role="menu">
+							 <a class="dropdown-item" href="/index"
+								role="menuitem"><i class="fa fa-home"
+								aria-hidden="true"></i> HOME</a> 
+							<div class="dropdown-divider" role="presentation"></div>
+							<a class="dropdown-item"  th:href="@{/logout}"
+								role="menuitem"><i class="icon wb-power" aria-hidden="true"></i>
+								Logout</a>
+					
+						</div></li>
+				</ul>
+				<!-- End Navbar Toolbar Right -->
+			</div>
+			<!-- End Navbar Collapse -->
+
+		</div>
+	</nav>
+</body>
+</html>
